@@ -4,8 +4,9 @@ let
   gpakTmux = pkgs.fetchFromGitHub {
     owner = "gpakosz";
     repo = ".tmux";
+    #rev = "824671603d6d03f0f7193b2a373e215f9b49b386";
     rev = "master";
-    sha256 = "1i3j76w2kjfbqagnkjs7x2zs7r04bgjawg0wpgafgv61kd0amjyj";
+    sha256 = "sha256-sHW0tU5zU5gEu6oX+ERCcZ7rxAgRp3PmMe9gvEHzlcE=";    
   };
 in
 {
@@ -35,6 +36,11 @@ in
     set -g mouse on
     set -g status-interval 1
   '';
+
+  #home.packages = with pkgs; [
+  #  anki
+  #];
+
   
   #---------------------------
   # Git

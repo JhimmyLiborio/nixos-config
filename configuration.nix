@@ -64,7 +64,12 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  environment.systemPackages = with pkgs; [ ];
+  environment.systemPackages = with pkgs; [ 
+    git
+    vim
+  ]; # ++ [
+    #inputs.globalprotect-openconnect.packages.${pkgs.system}.default
+  #];
 
   # Habilitar Flakes  + Nix Comandos
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
