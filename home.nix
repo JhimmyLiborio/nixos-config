@@ -6,7 +6,7 @@ let
     repo = ".tmux";
     #rev = "824671603d6d03f0f7193b2a373e215f9b49b386";
     rev = "master";
-    sha256 = "sha256-sHW0tU5zU5gEu6oX+ERCcZ7rxAgRp3PmMe9gvEHzlcE=";    
+    sha256 = "sha256-0suqQJvB7OfUuxw8ruRbBOSjv+hHy2mfwsvJKbg5csQ=";    
   };
 in
 {
